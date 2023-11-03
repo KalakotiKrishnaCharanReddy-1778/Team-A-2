@@ -502,6 +502,110 @@ insert into reservations (reservation_id, customer_id, car_id, pick_up_date, dro
 
 
 
+
+--1
+SELECT * FROM cars ORDER BY rental_rate_per_day desc;
+--2
+SELECT * FROM customers
+INNER JOIN reservations ON customers.customer_id = reservations.customer_id
+WHERE reservations.pick_up_date >= drop_off_date;
+--3
+SELECT SUM(rental_rate) AS total_revenue
+FROM reservations
+WHERE reservations.pick_up_date >= drop_off_date;
+--4
+SELECT COUNT(customer_id) 
+FROM reservations
+--5
+select distinct location_id,email_address,address
+from locations 
+where location_id is not null 
+order by location_id asc;
+--6
+SELECT location_id, AVG(rental_rate) AS avg_rental_rate
+FROM reservations
+GROUP BY location_id
+ORDER BY location_id asc;
+--7
+SELECT * FROM cars
+WHERE car_id NOT IN (SELECT car_id FROM reservations WHERE pick_up_date = '2023-11-04');
+
+
+--11
+SELECT customers.customer_id, customers.name, COUNT(*) AS num_expensive_car_rentals
+FROM customers
+INNER JOIN reservations ON customers.customer_id = reservations.customer_id
+INNER JOIN cars ON reservations.car_id = cars.car_id
+WHERE cars.rental_rate_per_day >= 100
+GROUP BY customers.customer_id, customers.name
+ORDER BY num_expensive_car_rentals DESC;
+--12
+SELECT employee_id, name, COUNT(*) AS num_Good_car_reservations
+FROM employees
+INNER JOIN reservations ON employees.employee_id = reservations.employee_id
+INNER JOIN cars ON reservations.car_id = cars.car_id
+WHERE cars.condition = 'Good'
+GROUP BY employees.employee_id, employees.name
+ORDER BY num_luxury_car_reservations DESC;
+
+
+--21
+SELECT car_id
+FROM cars
+WHERE car_id NOT IN (SELECT car_id FROM reservations WHERE pick_up_date = '2023-11-04')
+UNION
+SELECT car_id
+FROM reservations
+WHERE customer_id = 1;
+--22
+SELECT car_id
+FROM cars
+WHERE car_id NOT IN (SELECT car_id FROM reservations WHERE pick_up_date = '2023-11-04')
+MINUS
+SELECT car_id
+FROM reservations
+WHERE customer_id = 1;
+--23
+SELECT car_id
+FROM cars
+WHERE car_id NOT IN (SELECT car_id FROM reservations WHERE pick_up_date = '2023-11-04')
+INTERSECT
+SELECT car_id
+FROM reservations
+WHERE customer_id = 1;
+--24
+SELECT car_id
+FROM reservations
+WHERE pick_up_date >= DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AND (customer_id > 0 OR employee_id > 0)
+UNION ALL
+SELECT car_id
+FROM reservations
+WHERE employee_id > 0 AND pick_up_date >= DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH);
+--25
+-- Find all cars that are available for rent on a specific date, or that are rented by a specific customer, or that are rented by an employee in the past month:
+
+SELECT car_id
+FROM cars
+WHERE car_id NOT IN (SELECT car_id FROM reservations WHERE pick_up_date = '2023-11-04')
+UNION ALL
+SELECT car_id
+FROM reservations
+WHERE customer_id = 1
+UNION ALL
+SELECT car_id
+FROM reservations;
+--WHERE pick_up_date >= DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH);
+
+
+
+
+
+
+
+
+
+
+
 truncate table cars;
 
 
@@ -517,10 +621,13 @@ SELECT * FROM cars WHERE car_id NOT IN (
 
 
 SELECT SUM(rental_rate) FROM reservations
-WHERE pick_up_date <= '2023-11-01'
+WHERE pick_up_date <= '2023-11-01';
 
 
 SELECT * FROM reservations WHERE customer_id = 1;
+
+
+
 
 
 
