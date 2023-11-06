@@ -68,11 +68,7 @@ select * from employees;
 
 truncate table customers;
 
-drop table cars;
-drop table customers;
-drop table reservations;
-drop table locations;
-drop table employees;
+
 
 
 
@@ -89,7 +85,106 @@ INSERT INTO employees (employee_id, name, address, phone_number, email_address, 
 
 
 
-
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (1, 'Nova Reed', '789 Oak St', '555-345-6789', 'emily.phillips@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (2, 'Joseph Wright', '876 Willow Dr', '555-654-3210', 'john.doe@example.com', 'Marketing Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (3, 'Matthew Simmons', '708 Cedar Lane', '555-901-8765', 'grace.stewart@example.com', 'Software Engineer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (4, 'Andrew Hayes', '864 Lily Dr', '555-234-5678', 'james.anderson@example.com', 'Product Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (5, 'Ellie Foster', '876 Willow Dr', '555-321-0987', 'levi.wood@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (6, 'David Anderson', '951 Sycamore St', '555-098-7654', 'harper.wright@example.com', 'Graphic Designer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (7, 'Abigail King', '285 Redwood Ct', '555-890-1234', 'sebastian.ross@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (8, 'Mia Young', '931 Acacia Lane', '555-765-4321', 'amelia.hall@example.com', 'Software Engineer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (9, 'Luke Cox', '123 Main St', '555-345-6789', 'owen.butler@example.com', 'Accountant');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (10, 'Julian Barnes', '284 Juniper Drive', '555-890-1234', 'robert.davis@example.com', 'Data Analyst');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (11, 'Joseph Ross', '864 Iris Way', '555-321-0987', 'sophia.young@example.com', 'Customer Service Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (12, 'Daniel Hill', '869 Cypress Ct', '555-456-7890', 'gabriel.stewart@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (13, 'Michael Davis', '869 Cypress Ct', '555-890-1234', 'henry.adams@example.com', 'Product Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (14, 'Bella Gray', '253 Birch Court', '555-890-1234', 'ellie.brooks@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (15, 'Alexander Watson', '951 Daisy Ln', '555-432-1098', 'jack.bennett@example.com', 'Graphic Designer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (16, 'Hannah Watson', '357 Rose Ave', '555-321-0987', 'grace.barnes@example.com', 'Human Resources Coordinator');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (17, 'Daniel Reed', '869 Cypress Ct', '555-123-4567', 'matthew.walker@example.com', 'Product Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (18, 'Jackson Evans', '868 Willow Ave', '555-098-7654', 'chloe.adams@example.com', 'Accountant');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (19, 'Harper Nelson', '940 Magnolia Avenue', '555-098-7654', 'sophie.hughes@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (20, 'Bella Gray', '753 Rosemary Ct', '555-765-4321', 'john.doe@example.com', 'Data Analyst');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (21, 'Josephine Peterson', '579 Walnut Dr', '555-321-0987', 'david.wilson@example.com', 'Accountant');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (22, 'Henry Campbell', '468 Jasmine Ln', '555-210-9876', 'paisley.wood@example.com', 'Accountant');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (23, 'David Ross', '753 Juniper Way', '555-678-9012', 'daniel.campbell@example.com', 'Marketing Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (24, 'Victoria Perry', '219 Magnolia Blvd', '555-210-9876', 'william.anderson@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (25, 'Sebastian Reed', '753 Petunia Ct', '555-654-3210', 'dylan.ross@example.com', 'Customer Service Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (26, 'Olivia Martinez', '468 Tulip Rd', '555-876-5432', 'lily.roberts@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (27, 'Jayden Barnes', '697 Cedar Lane', '555-432-1098', 'henry.baker@example.com', 'Data Analyst');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (28, 'Victoria Perry', '142 Main Avenue', '555-789-0123', 'emily.johnson@example.com', 'Product Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (29, 'Stella Coleman', '357 Violet Blvd', '555-890-1234', 'charles.hughes@example.com', 'Data Analyst');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (30, 'Zoe Collins', '753 Oregano Ct', '555-234-5678', 'nathan.howard@example.com', 'Accountant');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (31, 'Layla Hayes', '207 Walnut Way', '555-678-9012', 'eva.henderson@example.com', 'Data Analyst');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (32, 'Daniel Reed', '753 Orchid Ct', '555-654-3210', 'scarlett.evans@example.com', 'Human Resources Coordinator');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (33, 'Christopher Gray', '586 Walnut Street', '555-345-6789', 'zoey.nelson@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (34, 'John Morris', '468 Jasmine Ln', '555-432-1098', 'benjamin.harris@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (35, 'Eleanor Wood', '978 Cedarwood Dr', '555-789-0123', 'christopher.ward@example.com', 'Data Analyst');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (36, 'John Morris', '123 Main St', '555-432-1098', 'sarah.thompson@example.com', 'Marketing Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (37, 'Levi Diaz', '579 Pansy Dr', '555-654-3210', 'grace.barnes@example.com', 'Software Engineer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (38, 'Jayden Barnes', '253 Cedar Lane', '555-234-5678', 'aubrey.richardson@example.com', 'Software Engineer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (39, 'Michael Davis', '586 Walnut Street', '555-890-1234', 'michael.brown@example.com', 'Marketing Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (40, 'Liam Brooks', '142 Main Avenue', '555-765-4321', 'benjamin.lewis@example.com', 'Software Engineer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (41, 'Daniel Hill', '207 Walnut Way', '555-321-0987', 'julian.jenkins@example.com', 'Graphic Designer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (42, 'Nora Morris', '987 Cedar Ln', '555-765-4321', 'chloe.rogers@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (43, 'Henry Hughes', '468 Hyacinth Ln', '555-123-4567', 'wyatt.bell@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (44, 'Carter Hughes', '869 Cypress Ct', '555-765-4321', 'hazel.kelly@example.com', 'Customer Service Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (45, 'Caleb Griffin', '987 Cedar Ln', '555-876-5432', 'zoey.nelson@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (46, 'Emma Wilson', '957 Magnolia Ct', '555-567-8901', 'emily.johnson@example.com', 'Marketing Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (47, 'Brooklyn Turner', '297 Hawthorn Blvd', '555-432-1098', 'levi.wood@example.com', 'Accountant');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (48, 'Bella Gray', '357 Violet Blvd', '555-456-7890', 'nathan.howard@example.com', 'Customer Service Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (49, 'Jackson Evans', '357 Thyme Blvd', '555-567-8901', 'christopher.ward@example.com', 'Product Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (50, 'Sebastian Reed', '135 Chestnut Rd', '555-432-1098', 'michael.brown@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (51, 'Michael Davis', '819 Spruce Road', '555-901-8765', 'daniel.campbell@example.com', 'Data Analyst');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (52, 'Michael Davis', '940 Magnolia Avenue', '555-234-5678', 'ellie.brooks@example.com', 'Customer Service Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (53, 'Daniel Thompson', '753 Orchid Ct', '555-321-0987', 'julian.peterson@example.com', 'Graphic Designer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (54, 'Jayden Barnes', '416 Redwood St', '555-987-6543', 'mia.white@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (55, 'Nora Morris', '920 Spruce Drive', '555-987-6543', 'john.doe@example.com', 'Product Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (56, 'Ellie Foster', '977 Poplar Ave', '555-567-8901', 'sebastian.ross@example.com', 'Software Engineer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (57, 'John Smith', '789 Oak Lane', '555-432-1098', 'grace.stewart@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (58, 'Olivia Martinez', '868 Willow Ave', '555-654-3210', 'aria.james@example.com', 'Customer Service Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (59, 'Zoe Collins', '819 Spruce Road', '555-789-0123', 'audrey.fisher@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (60, 'Avery Ramirez', '863 Fir Blvd', '555-876-5432', 'william.martin@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (61, 'Madison Torres', '864 Marigold Way', '555-321-0987', 'zoey.butler@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (62, 'Evelyn Morgan', '957 Magnolia Ct', '555-876-5432', 'david.wilson@example.com', 'Human Resources Coordinator');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (63, 'Gabriel Butler', '819 Juniper Lane', '555-901-8765', 'robert.davis@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (64, 'James Hall', '296 Aspen Ave', '555-098-7654', 'nathan.howard@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (65, 'Mila Richardson', '753 Rosemary Ct', '555-210-9876', 'mia.white@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (66, 'Daniel Thompson', '931 Maple Court', '555-210-9876', 'ava.jackson@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (67, 'Alexander Mitchell', '920 Spruce Drive', '555-765-4321', 'victoria.collins@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (68, 'Carter Hughes', '219 Magnolia Blvd', '555-432-1098', 'grace.scott@example.com', 'Human Resources Coordinator');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (69, 'Hannah Watson', '357 Peony Blvd', '555-987-6543', 'sophie.hughes@example.com', 'Human Resources Coordinator');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (70, 'Andrew Lewis', '456 Elm St', '555-234-5678', 'emily.phillips@example.com', 'Data Analyst');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (71, 'Aubrey Wood', '789 Oak St', '555-321-0987', 'ava.jackson@example.com', 'Accountant');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (72, 'Caleb Griffin', '285 Redwood Ct', '555-098-7654', 'emily.johnson@example.com', 'Product Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (73, 'Matthew Clark', '646 Sycamore Blvd', '555-432-1098', 'james.anderson@example.com', 'Software Engineer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (74, 'Sophia Taylor', '864 Parsley Way', '555-654-3210', 'jack.bennett@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (75, 'Mila Richardson', '357 Geranium Blvd', '555-123-4567', 'david.wilson@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (76, 'Mason Coleman', '142 Cypress Drive', '555-345-6789', 'michael.brown@example.com', 'Software Engineer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (77, 'Owen Ward', '579 Garlic Dr', '555-765-4321', 'zoey.nelson@example.com', 'Marketing Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (78, 'Andrew Lewis', '617 Cypress Court', '555-321-0987', 'wyatt.bell@example.com', 'Marketing Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (79, 'Luna Simmons', '951 Willow Lane', '555-210-9876', 'zoey.nelson@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (80, 'Ellie Foster', '987 Cedar Ln', '555-123-4567', 'abigail.kelly@example.com', 'Customer Service Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (81, 'Victoria Perry', '697 Pine Court', '555-789-0123', 'gabriel.stewart@example.com', 'Graphic Designer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (82, 'Carter Hughes', '357 Rose Ave', '555-987-6543', 'william.anderson@example.com', 'Customer Service Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (83, 'Brooklyn Turner', '753 Daffodil Ct', '555-987-6543', 'gabriel.bailey@example.com', 'Human Resources Coordinator');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (84, 'Ellie Foster', '210 Spruce Ct', '555-678-9012', 'dylan.watson@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (85, 'Julian Barnes', '951 Daisy Ln', '555-123-4567', 'benjamin.harris@example.com', 'Human Resources Coordinator');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (86, 'Joshua Reed', '864 Lily Dr', '555-345-6789', 'aria.james@example.com', 'Product Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (87, 'Lillian Foster', '647 Birchwood Rd', '555-432-1098', 'chloe.adams@example.com', 'Human Resources Coordinator');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (88, 'Aurora Barnes', '543 Spruce Way', '555-789-0123', 'sarah.miller@example.com', 'Data Analyst');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (89, 'Gabriel Butler', '508 Birchwood Way', '555-890-1234', 'lily.roberts@example.com', 'Product Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (90, 'Mason Coleman', '753 Orchid Ct', '555-210-9876', 'sophia.young@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (91, 'Logan Ross', '629 Olive Rd', '555-321-0987', 'amelia.hall@example.com', 'Marketing Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (92, 'Leo Watson', '876 Willow Dr', '555-678-9012', 'scarlett.brooks@example.com', 'Software Engineer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (93, 'David Anderson', '135 Walnut Circle', '555-234-5678', 'david.wilson@example.com', 'Human Resources Coordinator');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (94, 'Paisley Simmons', '869 Cypress Ct', '555-432-1098', 'ava.moore@example.com', 'Customer Service Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (95, 'Audrey Ross', '864 Magnolia Blvd', '555-123-4567', 'sophie.hughes@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (96, 'Paisley Simmons', '697 Dogwood Lane', '555-765-4321', 'gabriel.stewart@example.com', 'Software Engineer');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (97, 'Jackson Evans', '920 Fir Street', '555-567-8901', 'sophia.mitchell@example.com', 'Project Manager');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (98, 'Aria Diaz', '625 Aspen Pl', '555-765-4321', 'henry.baker@example.com', 'Data Analyst');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (99, 'Penelope Coleman', '321 Maple Drive', '555-765-4321', 'grace.barnes@example.com', 'Sales Representative');
+insert into employees (employee_id, name, address, phone_number, email_address, job_title) values (100, 'Carter Hughes', '625 Aspen Pl', '555-456-7890', 'aubrey.richardson@example.com', 'Accountant');
 
 
 insert into cars (car_id, make, model, year, license_plate_number, vin, color, mileage, condition, rental_rate_per_day) values (1, 'Volkswagen', 'BMW 3 Series', 2022, 'LMN654', '5NPEB4AC7BH000987', 'yellow', 89548, 'Good', 809);
@@ -531,25 +626,25 @@ SELECT * FROM cars
 WHERE car_id NOT IN (SELECT car_id FROM reservations WHERE pick_up_date = '2023-11-04');
 
 
---11
-SELECT customers.customer_id, customers.name, COUNT(*) AS num_expensive_car_rentals
-FROM customers
-INNER JOIN reservations ON customers.customer_id = reservations.customer_id
-INNER JOIN cars ON reservations.car_id = cars.car_id
-WHERE cars.rental_rate_per_day >= 100
-GROUP BY customers.customer_id, customers.name
-ORDER BY num_expensive_car_rentals DESC;
---12
-SELECT employee_id, name, COUNT(*) AS num_Good_car_reservations
-FROM employees
-INNER JOIN reservations ON employees.employee_id = reservations.employee_id
-INNER JOIN cars ON reservations.car_id = cars.car_id
-WHERE cars.condition = 'Good'
-GROUP BY employees.employee_id, employees.name
-ORDER BY num_luxury_car_reservations DESC;
+--11 Find the customers who have rented the most expensive cars:
+SELECT c.name, c.email_address, MAX(r1.rental_rate) AS most_expensive_car_rental_rate
+FROM customers c
+INNER JOIN reservations r1 ON c.customer_id = r1.customer_id
+WHERE r1.rental_rate > (SELECT MAX(r.rental_rate) FROM reservations r WHERE r.customer_id != c.customer_id)
+GROUP BY c.name, c.email_address
+ORDER BY most_expensive_car_rental_rate DESC;
+
+--12 Find all the cars with good condition
+SELECT car_id, make, model, year, license_plate_number, VIN, color, mileage, condition, rental_rate_per_day
+FROM cars c
+WHERE c.condition IN (SELECT c.condition FROM cars c WHERE c.condition = 'Good');
+
+
+
 
 
 --21
+-- Find all cars that are available for rent on a specific date or that are rented by a specific customer:
 SELECT car_id
 FROM cars
 WHERE car_id NOT IN (SELECT car_id FROM reservations WHERE pick_up_date = '2023-11-04')
@@ -557,7 +652,31 @@ UNION
 SELECT car_id
 FROM reservations
 WHERE customer_id = 1;
---22
+
+--22-- Find all cars that are rented by customers from given date or that are rented by employees from given date:
+
+SELECT car_id
+FROM reservations
+WHERE pick_up_date >='2022-02-09' AND customer_id > 0
+UNION ALL
+SELECT r.car_id
+FROM employees e,reservations r
+WHERE e.employee_id > 0 AND pick_up_date >= '2022-02-09';
+
+
+
+--23-- Find all cars that are available for rent on a specific date and that are also rented by a specific customer:
+SELECT car_id
+FROM cars
+WHERE car_id NOT IN (SELECT car_id FROM reservations WHERE pick_up_date = '2023-11-04')
+INTERSECT
+SELECT car_id
+FROM reservations
+WHERE customer_id <50;
+--24
+
+-- Find all cars that are available for rent on a specific date but are not rented by a specific customer:
+
 SELECT car_id
 FROM cars
 WHERE car_id NOT IN (SELECT car_id FROM reservations WHERE pick_up_date = '2023-11-04')
@@ -565,22 +684,7 @@ MINUS
 SELECT car_id
 FROM reservations
 WHERE customer_id = 1;
---23
-SELECT car_id
-FROM cars
-WHERE car_id NOT IN (SELECT car_id FROM reservations WHERE pick_up_date = '2023-11-04')
-INTERSECT
-SELECT car_id
-FROM reservations
-WHERE customer_id = 1;
---24
-SELECT car_id
-FROM reservations
-WHERE pick_up_date >= DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AND (customer_id > 0 OR employee_id > 0)
-UNION ALL
-SELECT car_id
-FROM reservations
-WHERE employee_id > 0 AND pick_up_date >= DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH);
+
 --25
 -- Find all cars that are available for rent on a specific date, or that are rented by a specific customer, or that are rented by an employee in the past month:
 
@@ -592,9 +696,10 @@ SELECT car_id
 FROM reservations
 WHERE customer_id = 1
 UNION ALL
-SELECT car_id
-FROM reservations;
---WHERE pick_up_date >= DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH);
+SELECT r.car_id
+FROM employees e,reservations r
+WHERE e.employee_id > 0;
+
 
 
 
